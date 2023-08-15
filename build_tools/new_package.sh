@@ -41,7 +41,7 @@ downloadlink() {
             echo -e "\t$\(call DOWNLOAD_FILES,\$(BUILD_SOURCE),$(${SED} "s/${2}/\$(${4}_VERSION)/g" <<< "$1"))"
         else
             echo -e "\t$\(call DOWNLOAD_FILE,\$(BUILD_SOURCE)/${3}-\$(${4}_VERSION).tar.${download##*.},$(${SED} "s/${2}/\$(${4}_VERSION)/g" <<< "$1"))"
-        fi
+        fi 
     fi
 }
 
